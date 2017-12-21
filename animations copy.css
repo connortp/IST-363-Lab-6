@@ -1,0 +1,35 @@
+@keyframes color-change {
+0% {background-color: red;}
+25% {background-color: red;}
+50% {background-color: white;}
+100% {background-color: blue;}
+}
+
+@keyframes flashdash {
+0% {transform: translate(0px,0px);}
+50% {transform: translate(1200px,0px);}
+100% {transform: translate(0px,0px);}
+}
+
+@keyframes crazy {
+0% {transform:translate(0px,0px);}
+16% {transform: translate(100px,0px);}
+32% {transform:translate(100px,0px) rotate(45deg);}
+48% {transform:translate(100px,0px) rotate(45deg) scale(1.5) scale(1);}
+64% {transform:translate(100px,0px) rotate(45deg);}
+80% {transform: translate(100px, 0px);}
+100% {transform:translate(0px,0px);}
+}
+
+body {overflow-x:hidden;}
+.box {width:100px; height:100px; background-color:#000;}
+
+/*a-1 Animation*/
+.a-1 .box {animation: color-change 2s linear 0s alternate infinite;}
+
+/*a-2 Animation*/
+.a-2 .box{animation: flashdash 2s linear 0s infinite;}
+
+
+/*a-3 Animation*/
+.a-3 .box{animation: crazy 5s linear 0s infinite;}
